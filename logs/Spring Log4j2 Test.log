@@ -1,0 +1,4 @@
+[36m2021/12/23 09:36:29,546[m [34m[DEBUG][m  [org.springframework.context.support.AbstractApplicationContext] [33m[Thread-2][m- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68759011, started on Wed Dec 22 14:58:37 KST 2021
+ -[36m2021/12/23 09:36:29,965[m [34m[DEBUG][m  [org.springframework.jmx.export.MBeanExporter] [33m[Thread-2][m- Unregistering JMX-exposed beans on shutdown
+ -[36m2021/12/23 09:36:29,968[m [32m[INFO ][m  [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [33m[Thread-2][m- Shutting down ExecutorService 'applicationTaskExecutor'
+ -

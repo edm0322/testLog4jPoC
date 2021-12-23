@@ -1,0 +1,38 @@
+buildscript{
+    ext{
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    repositories{
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'org.wins.testLog4jPoC'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web')//gradle 7 complie -> implementation
+    implementation('org.springframework.boot:spring-boot-starter-log4j2:2.6.1')
+    //implementation group: 'org.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') //gradle 7 testcomplie -> testimplementation
+}
+
+configurations {
+    all{
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
+}
