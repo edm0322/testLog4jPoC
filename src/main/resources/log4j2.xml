@@ -39,4 +39,5 @@
             <AppenderRef ref="Console_Appender" />
         </Logger>
     </Loggers>
+    <!-- 20220627 git test-->
 </Configuration>
